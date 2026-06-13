@@ -3,7 +3,7 @@ export const personal = {
   title: 'Full Stack AI Engineer',
   tagline: 'Building intelligent solutions and agentic AI automations that solve real-world problems.',
   location: 'Islamabad, Pakistan',
-  email: 'your.email@example.com',
+  email: 'muhammadshahzaibgpp@gmail.com',
   photo: '/images/main-image.png',
   bio: `I'm a final year CS student at NUST who turns ideas into production-ready systems. From full stack web apps to agentic AI workflows, I build things people actually use, and I love watching them use it.`,
   motto: 'Compete. Build. Scale.',
