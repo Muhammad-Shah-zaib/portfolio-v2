@@ -7,14 +7,13 @@
             Contact
           </p>
           <h2 class="text-3xl md:text-5xl font-extrabold text-text-primary tracking-tight leading-tight">
-            Got a project?
+            Let's connect.
             <br />
-            <span class="text-gradient">Let's build it.</span>
+            <span class="text-gradient">I'd love to hear from you.</span>
           </h2>
 
           <p class="mt-5 text-text-secondary text-lg leading-relaxed max-w-xl">
-            Whether you need a full stack web app, an AI-powered system, or just want to explore what's possible —
-            I'm open to conversations. Drop a message or reach me on socials.
+            Whether you're a recruiter, a fellow developer, or someone curious about my work, feel free to reach out. I'm always open to interesting conversations.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
@@ -26,7 +25,7 @@
               Send an Email
             </a>
             <a
-              v-for="social in activeSocials"
+              v-for="social in socials"
               :key="social.name"
               :href="social.url"
               target="_blank"
@@ -35,7 +34,6 @@
             >
               <Icon :icon="social.icon" class="w-5 h-5" />
               {{ social.name }}
-              <span v-if="social.comingSoon" class="text-xs px-1.5 py-0.5 rounded-full bg-accent-100 text-accent-600 font-medium">Soon</span>
             </a>
           </div>
         </div>
@@ -45,12 +43,10 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import { Icon } from '@iconify/vue'
 import { personal, socials } from '@/data/personal.js'
 import { animateOnScroll } from '@/composables/useScrollAnimations.js'
-
-const activeSocials = computed(() => socials.filter(s => !s.comingSoon))
 
 onMounted(() => {
   animateOnScroll('.contact-section')

@@ -60,7 +60,7 @@
         <div class="hero-image flex justify-center md:justify-end order-1 md:order-2">
           <div class="relative">
             <div class="absolute inset-0 rounded-3xl rotate-3 bg-primary-100/70 scale-[0.97]"></div>
-            <div class="relative w-[280px] h-[380px] md:w-[340px] md:h-[460px] rounded-3xl overflow-hidden border border-border shadow-2xl shadow-primary-100/40">
+            <div class="relative w-[320px] h-[430px] md:w-[420px] md:h-[560px] rounded-3xl overflow-hidden border border-border shadow-2xl shadow-primary-100/40">
               <img
                 :src="personal.photo"
                 :alt="personal.name"
@@ -68,7 +68,7 @@
               />
             </div>
             <div class="absolute -bottom-5 -left-5 px-4 py-2.5 bg-surface-card border border-border rounded-2xl shadow-lg flex items-center gap-2">
-              <span class="text-lg">⚡</span>
+              <Icon icon="mdi:fire" class="w-5 h-5 text-orange-500" />
               <p class="text-sm font-bold text-text-primary">{{ personal.motto }}</p>
             </div>
           </div>

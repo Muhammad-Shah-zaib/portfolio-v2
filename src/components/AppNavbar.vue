@@ -4,7 +4,7 @@
     :class="scrolled ? 'bg-white/90 backdrop-blur-md border-b border-border shadow-sm' : 'bg-transparent'"
   >
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold text-primary-600 tracking-tight">
+      <a href="#" class="text-xl font-bold text-primary-600 tracking-tight" @click.prevent="scrollTo('#')">
         shahzaib<span class="text-text-muted">.</span>
       </a>
 
@@ -13,6 +13,7 @@
           <a
             :href="link.href"
             class="text-sm font-medium text-text-secondary hover:text-primary-600 transition-colors"
+            @click.prevent="scrollTo(link.href)"
           >
             {{ link.label }}
           </a>
@@ -37,7 +38,7 @@
           <a
             :href="link.href"
             class="text-sm font-medium text-text-secondary hover:text-primary-600 transition-colors"
-            @click="mobileOpen = false"
+            @click.prevent="scrollTo(link.href); mobileOpen = false"
           >
             {{ link.label }}
           </a>
@@ -64,6 +65,15 @@ const navLinks = [
 
 const scrolled = ref(false)
 const mobileOpen = ref(false)
+
+function scrollTo(href) {
+  if (href === '#') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
+  const el = document.querySelector(href)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
 
 function handleScroll() {
   scrolled.value = window.scrollY > 50

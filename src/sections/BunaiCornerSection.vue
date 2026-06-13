@@ -13,7 +13,7 @@
           <div>
             <div class="flex items-center gap-2 mb-5">
               <span class="px-3 py-1 text-xs font-bold uppercase tracking-widest bg-amber-200/70 text-amber-800 rounded-full">
-                Coming Soon
+                Live
               </span>
               <span class="text-lg">🧶</span>
             </div>
@@ -27,17 +27,21 @@
             </p>
 
             <p class="mt-5 text-stone-600 leading-relaxed max-w-xl">
-              My sister and I are building <strong class="text-stone-800">bunai-corner</strong> — a handcrafted crochet store where every piece
+              My sister and I are building <strong class="text-stone-800">bunai-corner</strong>, a handcrafted crochet store where every piece
               is made with care and intention. Artisanal, unique, and made by hand.
-              It's not just a side project — it's a small business we're pouring our energy into.
+              It's not just a side project. It's a small business we're pouring our energy into.
             </p>
 
             <div class="mt-8 flex items-center gap-4">
-              <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-400/30 border border-amber-300 text-amber-800 font-semibold rounded-xl text-sm">
-                <Icon icon="mdi:clock-outline" class="w-4 h-4" />
-                Launching Soon
-              </div>
-              <p class="text-sm text-stone-400">— Inshallah</p>
+              <a
+                href="https://bunaicorner.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-white font-semibold rounded-xl text-sm transition-all active:scale-95"
+              >
+                <Icon icon="mdi:store-outline" class="w-4 h-4" />
+                Visit the Store
+              </a>
             </div>
           </div>
 

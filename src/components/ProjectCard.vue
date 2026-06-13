@@ -42,6 +42,26 @@
           {{ tech }}
         </span>
       </div>
+
+      <div v-if="project.links && project.links.length" class="mt-6 flex flex-wrap gap-3">
+        <a
+          v-for="link in project.links"
+          :key="link.label"
+          :href="link.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-xl border transition-all"
+          :class="
+            link.label === 'GitHub'
+              ? 'bg-gray-900 text-white border-gray-900 hover:bg-gray-700'
+              : 'bg-primary-50 text-primary-700 border-primary-200 hover:bg-primary-100'
+          "
+        >
+          <Icon :icon="link.icon" class="w-4 h-4" />
+          {{ link.label }}
+          <span v-if="link.label === 'Watch Walkthrough'" class="ml-1 px-1.5 py-0.5 text-[10px] font-bold rounded bg-[#625DF5] text-white leading-none">Loom</span>
+        </a>
+      </div>
     </div>
   </div>
 </template>

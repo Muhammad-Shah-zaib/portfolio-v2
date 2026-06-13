@@ -1,5 +1,22 @@
 export const projects = [
   {
+    title: 'Bunai Corner - Product Listing Automation',
+    description:
+      'After my sister\'s handcrafted crochet page hit around 100 orders on Instagram, I built an end-to-end automation pipeline to make listing products on our e-commerce store fast and consistent.',
+    highlights: [
+      '5-step pipeline: select AI gateway, upload raw photo, configure camera angles, generate product copy and optimized images, then publish directly to the store.',
+      'Cut listing time from 10-20 minutes to 1-3 minutes per product - over 86% faster with up to 10x throughput.',
+      'Supports multiple AI gateways including Gemini, OpenRouter, and a custom proxy for flexible model selection.',
+    ],
+    tech: ['Vue.js', 'Node.js', 'Gemini', 'OpenRouter', 'Vertex AI', 'Claude', 'AWS EC2', 'DigitalOcean'],
+    featured: true,
+    links: [
+      { label: 'GitHub', icon: 'mdi:github', url: 'https://lnkd.in/dzWMWSaD' },
+      { label: 'Live App', icon: 'mdi:open-in-new', url: 'https://lnkd.in/drY3YKWT' },
+      { label: 'Watch Walkthrough', icon: 'mdi:play-circle-outline', url: 'https://lnkd.in/d6aDsjQw' },
+    ],
+  },
+  {
     title: 'Intelligent AI Drawing Tutor',
     description:
       'A comprehensive agentic AI application that functions as an interactive drawing tutor with real-time voice, text, and video interactions.',
@@ -10,7 +27,7 @@ export const projects = [
     ],
     tech: ['Next.js', 'FastAPI', 'Supabase', 'ElevenLabs', 'Claude', 'Gemini'],
     featured: false,
-    link: '#',
+    links: [],
   },
   {
     title: 'Sales Portal & Campaign Manager',
@@ -23,17 +40,6 @@ export const projects = [
     ],
     tech: ['Next.js', 'Supabase'],
     featured: false,
-    link: '#',
-  },
-  {
-    title: 'Project Coming Soon',
-    description:
-      'A new project currently in the works. Details will be updated here shortly.',
-    highlights: [
-      'Details to be announced.',
-    ],
-    tech: ['TBA'],
-    featured: true,
-    link: '#',
+    links: [],
   },
 ]

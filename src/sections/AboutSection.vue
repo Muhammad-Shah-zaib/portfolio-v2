@@ -9,12 +9,12 @@
 
           <div class="space-y-4 text-text-secondary leading-relaxed">
             <p>
-              Final year CS student at <strong class="text-text-primary font-semibold">NUST Islamabad</strong> —
+              Final year CS student at <strong class="text-text-primary font-semibold">NUST Islamabad</strong>,
               Pakistan's top engineering university. From Bahawalpur to the capital, chasing bigger problems.
             </p>
             <p>
               I write JavaScript by default, but I'll reach for Python, TypeScript, or C# when the job calls for it.
-              Deep into agentic AI right now — building systems that don't just respond, they act.
+              Deep into agentic AI right now, building systems that don't just respond, they act.
             </p>
             <p>
               Off-screen: competitive gamer, football player. That same drive keeps me waking up to build every day.
@@ -57,31 +57,31 @@
             <svg viewBox="0 0 200 210" xmlns="http://www.w3.org/2000/svg" width="220" height="231">
 
               <!-- Body -->
-              <ellipse cx="100" cy="208" rx="52" ry="30" fill="#fbd844"/>
+              <ellipse cx="100" cy="208" rx="52" ry="30" fill="#f97316"/>
 
               <!-- Tail -->
               <path d="M 148,198 Q 190,170 183,144 Q 177,124 160,136"
-                fill="none" stroke="#fbd844" stroke-width="16" stroke-linecap="round"/>
+                fill="none" stroke="#f97316" stroke-width="16" stroke-linecap="round"/>
               <path d="M 148,198 Q 190,170 183,144 Q 177,124 160,136"
-                fill="none" stroke="#d4920a" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
+                fill="none" stroke="#c2410c" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
 
               <!-- Left outer ear -->
-              <polygon points="36,72 50,18 82,62" fill="#fbd844"/>
+              <polygon points="36,72 50,18 82,62" fill="#f97316"/>
               <!-- Left inner ear -->
               <polygon points="42,67 50,27 72,60" fill="#fbcfe8"/>
 
               <!-- Right outer ear -->
-              <polygon points="164,72 150,18 118,62" fill="#fbd844"/>
+              <polygon points="164,72 150,18 118,62" fill="#f97316"/>
               <!-- Right inner ear -->
               <polygon points="158,67 150,27 128,60" fill="#fbcfe8"/>
 
-              <!-- Head -->
-              <circle cx="100" cy="110" r="70" fill="#fbd844"/>
+              <!-- Head (slightly oval for a more natural cat shape) -->
+              <ellipse cx="100" cy="110" rx="72" ry="66" fill="#f97316"/>
 
               <!-- Forehead tabby stripes -->
-              <path d="M 87,52 Q 100,46 113,52" fill="none" stroke="#d4920a" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M 85,63 Q 100,57 115,63" fill="none" stroke="#d4920a" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M 83,74 Q 100,68 117,74" fill="none" stroke="#d4920a" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 87,52 Q 100,46 113,52" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 85,63 Q 100,57 115,63" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 83,74 Q 100,68 117,74" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/>
 
               <!-- Muzzle -->
               <ellipse cx="100" cy="134" rx="26" ry="18" fill="#fef3c7"/>
@@ -103,20 +103,19 @@
                 <path d="M 93,132 Q 100,139 107,132" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round"/>
               </g>
 
-              <!-- LAUGHING: arc eyes, cheeks, big smile -->
+              <!-- LAUGHING: arc eyes, cheeks, big smile (no white overlay) -->
               <g v-else-if="mood === 'laughing'">
                 <circle cx="58" cy="116" r="14" fill="#fbcfe8" opacity="0.55"/>
                 <circle cx="142" cy="116" r="14" fill="#fbcfe8" opacity="0.55"/>
                 <path d="M 63,105 Q 76,90 89,105" fill="none" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
                 <path d="M 111,105 Q 124,90 137,105" fill="none" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
                 <path d="M 84,132 Q 100,153 116,132" fill="none" stroke="#92400e" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M 87,133 Q 100,150 113,133 L 113,137 Q 100,153 87,137 Z" fill="white" opacity="0.7"/>
               </g>
 
-              <!-- SAD: droopy brows, downcast pupils, teardrop, frown -->
+              <!-- SAD: droopy brows, downcast pupils, teardrop, single frown -->
               <g v-else-if="mood === 'sad'">
-                <path d="M 62,94 Q 70,101 80,97" fill="none" stroke="#d4920a" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M 120,97 Q 130,101 138,94" fill="none" stroke="#d4920a" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 62,94 Q 70,101 80,97" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 120,97 Q 130,101 138,94" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/>
                 <circle cx="76" cy="103" r="13" fill="white"/>
                 <circle cx="76" cy="107" r="8" fill="#1a73e8"/>
                 <ellipse cx="76" cy="108" rx="3" ry="5" fill="#1a1a2e"/>
@@ -128,10 +127,10 @@
                 <ellipse cx="66" cy="122" rx="4.5" ry="7" fill="#93c5fd" opacity="0.9"/>
                 <path d="M 100,127 L 93,132" stroke="#92400e" stroke-width="2" stroke-linecap="round" fill="none"/>
                 <path d="M 100,127 L 107,132" stroke="#92400e" stroke-width="2" stroke-linecap="round" fill="none"/>
-                <path d="M 90,138 Q 100,130 110,138" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round"/>
+                <path d="M 93,132 Q 100,126 107,132" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round"/>
               </g>
 
-              <!-- ANGRY: heavy brows, squinted eyes with lids, frown -->
+              <!-- ANGRY: heavy brows, squinted eyes with lids, single frown -->
               <g v-else-if="mood === 'angry'">
                 <path d="M 57,87 L 85,97" fill="none" stroke="#92400e" stroke-width="4.5" stroke-linecap="round"/>
                 <path d="M 143,87 L 115,97" fill="none" stroke="#92400e" stroke-width="4.5" stroke-linecap="round"/>
@@ -139,29 +138,25 @@
                 <circle cx="76" cy="107" r="7" fill="#1a73e8"/>
                 <ellipse cx="76" cy="107" rx="2.5" ry="4.5" fill="#1a1a2e"/>
                 <circle cx="73" cy="104" r="1.5" fill="white"/>
-                <path d="M 65,103 Q 76,100 87,103 Z" fill="#fbd844"/>
                 <circle cx="124" cy="107" r="11" fill="white"/>
                 <circle cx="124" cy="107" r="7" fill="#1a73e8"/>
                 <ellipse cx="124" cy="107" rx="2.5" ry="4.5" fill="#1a1a2e"/>
                 <circle cx="121" cy="104" r="1.5" fill="white"/>
-                <path d="M 113,103 Q 124,100 135,103 Z" fill="#fbd844"/>
                 <path d="M 100,127 L 93,132" stroke="#92400e" stroke-width="2" stroke-linecap="round" fill="none"/>
                 <path d="M 100,127 L 107,132" stroke="#92400e" stroke-width="2" stroke-linecap="round" fill="none"/>
-                <path d="M 89,138 Q 100,130 111,138" fill="none" stroke="#92400e" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 93,132 Q 100,126 107,132" fill="none" stroke="#92400e" stroke-width="2.5" stroke-linecap="round"/>
               </g>
 
-              <!-- NONCHALANT: half-lids over both eyes, pupils sideways, flat mouth -->
+              <!-- NONCHALANT: half-lids raised, pupils sideways, flat mouth -->
               <g v-else-if="mood === 'nonchalant'">
                 <circle cx="76" cy="105" r="13" fill="white"/>
                 <circle cx="80" cy="105" r="8" fill="#1a73e8"/>
                 <ellipse cx="82" cy="105" rx="3" ry="5.5" fill="#1a1a2e"/>
                 <circle cx="79" cy="102" r="2" fill="white"/>
-                <path d="M 63,105 Q 76,92 89,105 Z" fill="#fbd844"/>
                 <circle cx="124" cy="105" r="13" fill="white"/>
                 <circle cx="128" cy="105" r="8" fill="#1a73e8"/>
                 <ellipse cx="130" cy="105" rx="3" ry="5.5" fill="#1a1a2e"/>
                 <circle cx="127" cy="102" r="2" fill="white"/>
-                <path d="M 111,105 Q 124,92 137,105 Z" fill="#fbd844"/>
                 <path d="M 100,127 L 93,132" stroke="#92400e" stroke-width="2" stroke-linecap="round" fill="none"/>
                 <path d="M 100,127 L 107,132" stroke="#92400e" stroke-width="2" stroke-linecap="round" fill="none"/>
                 <path d="M 93,133 L 114,132" fill="none" stroke="#92400e" stroke-width="2" stroke-linecap="round"/>
@@ -215,16 +210,16 @@ const MOODS = [
 ]
 
 const facts = [
-  'Has a deeply competitive mindset — gaming, football, coding. If there\'s a leaderboard, he wants the top spot.',
-  'Final year CS student at NUST Islamabad — one of Pakistan\'s most selective engineering universities.',
+  'Has a deeply competitive mindset, gaming, football, coding. If there\'s a leaderboard, he wants the top spot.',
+  'Final year CS student at NUST Islamabad, one of Pakistan\'s most selective engineering universities.',
   'Born and raised in Bahawalpur. Moved to Islamabad to chase bigger problems.',
-  'Plays football regularly and treats it like a team sport version of engineering — systems, roles, and execution.',
+  'Plays football regularly and treats it like a team sport version of engineering, systems, roles, and execution.',
   'Active in NUST societies. Believes the campus has as much to offer outside class as inside.',
   'Built his first client project during his first year of university. Hasn\'t stopped shipping since.',
   'Runs Fedora Linux daily. Has toured Arch, Manjaro, Pop!_OS, and Ubuntu before settling.',
-  'Building an e-commerce brand with his sister — bunai-corner — a handcrafted crochet store, from scratch.',
+  'Building an e-commerce brand with his sister, bunai-corner, a handcrafted crochet store, from scratch.',
   'Believes most clients need direction before they need code.',
-  'Obsessed with agentic AI — systems that don\'t just respond, they act and decide.',
+  'Obsessed with agentic AI, systems that don\'t just respond, they act and decide.',
   'Loves watching real people use something he built. That\'s the whole point.',
 ]
 
