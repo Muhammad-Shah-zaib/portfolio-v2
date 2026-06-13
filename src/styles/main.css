@@ -2,40 +2,46 @@
 
 @theme {
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-serif: "Noto Serif", Georgia, serif;
 
-  /* Primary — Google Blue */
-  --color-primary-50: #e8f0fe;
-  --color-primary-100: #d2e3fc;
-  --color-primary-200: #aecbfa;
-  --color-primary-300: #8ab4f8;
-  --color-primary-400: #669df6;
-  --color-primary-500: #4285f4;
-  --color-primary-600: #1a73e8;
-  --color-primary-700: #1967d2;
-  --color-primary-800: #185abc;
-  --color-primary-900: #174ea6;
+  /* Primary — Heritage Rose / Dusty Mauve */
+  --color-primary-50: #f8eded;
+  --color-primary-100: #f1dcdc;
+  --color-primary-200: #e2b8b9;
+  --color-primary-300: #cc9495;
+  --color-primary-400: #aa7475;
+  --color-primary-500: #815a5b;
+  --color-primary-600: #744e4f;
+  --color-primary-700: #5e3e3f;
+  --color-primary-800: #4e3334;
+  --color-primary-900: #3d2627;
 
-  /* Accent — warm amber, used sparingly */
-  --color-accent-100: #fef3c7;
-  --color-accent-300: #fcd34d;
-  --color-accent-400: #fbbc04;
-  --color-accent-500: #f9ab00;
-  --color-accent-600: #e37400;
+  /* Accent — Soft Lavender (secondary container) */
+  --color-accent-100: #f5f5ff;
+  --color-accent-200: #eeeefe;
+  --color-accent-300: #e6e6fa;
+  --color-accent-400: #d0d0f5;
+  --color-accent-500: #b5b5ec;
+  --color-accent-600: #4a4a8a;
 
-  /* Surfaces — warm sand */
-  --color-surface: #fdf8f2;
-  --color-surface-alt: #f7f0e6;
-  --color-surface-card: #fffdf9;
-  --color-surface-raised: #ede8df;
+  /* Tertiary — Fresh Mint (success states, "New Arrival" tags) */
+  --color-tertiary-100: #dcfeec;
+  --color-tertiary-600: #1a7a4a;
 
-  /* Text — Google dark scale */
-  --color-text-primary: #202124;
-  --color-text-secondary: #5f6368;
-  --color-text-muted: #9aa0a6;
+  /* Surfaces — Warm Cream / Heritage Paper */
+  --color-surface: #fefcf4;
+  --color-surface-alt: #fbfaef;
+  --color-surface-card: #fdfdf6;
+  --color-surface-raised: #ede9d8;
 
-  /* Border */
-  --color-border: #dadce0;
-  --color-border-hover: #bdc1c6;
+  /* Text — Warm Ink (never pure black) */
+  --color-text-primary: #36392c;
+  --color-text-secondary: #5a5d50;
+  --color-text-muted: #8c8f82;
+
+  /* Border — ghost-weight; use at low opacity per design spec */
+  --color-border: #c4c1ac;
+  --color-border-hover: #a09d88;
 }
 
 html {
@@ -51,28 +57,80 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-primary-100);
+  background-color: var(--color-accent-300);
   color: var(--color-primary-800);
 }
 
-/* Outlined display text — premium agency feel */
+/* Outlined display text — editorial serif accent */
 .text-outline {
   -webkit-text-stroke: 2px currentColor;
   color: transparent;
 }
 
-/* Gradient text utility */
+/* Gradient text utility — warm mauve fade */
 .text-gradient {
-  background: linear-gradient(135deg, #1a73e8 0%, #4285f4 50%, #fbbc04 100%);
+  background: linear-gradient(135deg, #815a5b 0%, #c45c6a 50%, #f43f5e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Dot pattern for mission section */
+/* Dot pattern — warm tone for mission section */
 .bg-dot-pattern {
-  background-image: radial-gradient(circle, #dadce0 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, #c4c1ac 1.5px, transparent 1.5px);
   background-size: 28px 28px;
+}
+
+/* Silk blur — frosted glass for nav / floating elements */
+.glass-silk {
+  background-color: color-mix(in srgb, var(--color-surface) 72%, transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Ambient bloom shadow — warm tinted, no harsh drop shadow */
+.shadow-bloom {
+  box-shadow: 0px 20px 40px rgba(54, 57, 44, 0.06);
+}
+
+/* Primary CTA gradient — pillowy volume */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-600) 100%);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 20px 40px rgba(54, 57, 44, 0.14);
+  transform: translateY(-1px);
+}
+
+/* Secondary button — lavender container */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-accent-600);
+  background: var(--color-accent-300);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0px 20px 40px rgba(54, 57, 44, 0.08);
+  transform: translateY(-1px);
 }
 
 /* Tag pill */
@@ -84,14 +142,27 @@ body {
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 500;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
+  background: var(--color-surface-alt);
   color: var(--color-text-secondary);
   transition: all 0.2s;
 }
 
 .tag-pill:hover {
-  border-color: var(--color-primary-300);
-  color: var(--color-primary-600);
-  background: var(--color-primary-50);
+  background: var(--color-accent-200);
+  color: var(--color-accent-600);
+}
+
+/* Tertiary "New Arrival" tag */
+.tag-fresh {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--color-tertiary-100);
+  color: var(--color-tertiary-600);
 }
