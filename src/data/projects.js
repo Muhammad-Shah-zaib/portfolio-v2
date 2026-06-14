@@ -2,18 +2,18 @@ export const projects = [
   {
     title: 'Bunai Corner - Product Listing Automation',
     description:
-      'After my sister\'s handcrafted crochet page hit around 100 orders on Instagram, I built an end-to-end automation pipeline to make listing products on our e-commerce store fast and consistent.',
+      'Manually listing products used to take 10-20 minutes of bouncing between AI tools to enhance images and write copy. I built this end-to-end automation pipeline to take a basic, low-resolution photo and instantly generate professional, e-commerce-ready images (with proper lighting, background, and textures) alongside optimized titles, and descriptions.',
     highlights: [
-      '5-step pipeline: select AI gateway, upload raw photo, configure camera angles, generate product copy and optimized images, then publish directly to the store.',
-      'Cut listing time from 10-20 minutes to 1-3 minutes per product - over 86% faster with up to 10x throughput.',
-      'Supports multiple AI gateways including Gemini, OpenRouter, and a custom proxy for flexible model selection.',
+      'Streamlined workflow: upload a raw photo, generate enhanced visuals and product copy, review in the gallery view, and publish directly to the store.',
+      'Cut listing time from 10-20 minutes to 1-3 minutes per product, completely automating the back-and-forth prompting process.',
+      'Configured with multiple AI gateways (Gemini, OpenRouter, and a custom proxy server), primarily utilizing Gemini models to transform unprofessional photos into high-quality, market-ready assets.'
     ],
     tech: ['Vue.js', 'Node.js', 'Gemini', 'OpenRouter', 'Vertex AI', 'Claude', 'AWS EC2', 'DigitalOcean'],
     featured: true,
     links: [
       { label: 'GitHub', icon: 'mdi:github', url: 'https://lnkd.in/dzWMWSaD' },
-      { label: 'Live App', icon: 'mdi:open-in-new', url: 'https://lnkd.in/drY3YKWT' },
-      { label: 'Watch Walkthrough', icon: 'mdi:play-circle-outline', url: 'https://lnkd.in/d6aDsjQw' },
+      { label: 'Live App', icon: 'mdi:open-in-new', url: 'https://autoshot.snsadminportal.dev' },
+      { label: 'Watch Walkthrough', icon: 'mdi:play-circle-outline', url: 'https://www.loom.com/share/4e98e169b0734f3c8cf3312dfa315e8d' },
     ],
   },
   {
@@ -23,7 +23,7 @@ export const projects = [
     highlights: [
       'Multi-model architecture using Claude for reasoning and Gemini for memory management.',
       'Real-time voice synthesis powered by ElevenLabs for natural conversations.',
-      'Sophisticated memory system with Supabase enabling cross-session learning continuity.',
+      'Sophisticated memory system that also manages user profiles for customizing the learning experience and enabling cross-session learning continuity.',
     ],
     tech: ['Next.js', 'FastAPI', 'Supabase', 'ElevenLabs', 'Claude', 'Gemini'],
     featured: false,

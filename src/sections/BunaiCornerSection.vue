@@ -12,8 +12,8 @@
         <div class="relative p-8 md:p-14 grid md:grid-cols-[1fr_auto] gap-10 items-center">
           <div>
             <div class="flex items-center gap-2 mb-5">
-              <span class="px-3 py-1 text-xs font-bold uppercase tracking-widest bg-amber-200/70 text-amber-800 rounded-full">
-                Live
+              <span class="px-3 py-1 text-xs font-bold uppercase tracking-widest bg-stone-200/80 text-stone-500 rounded-full">
+                Coming Soon
               </span>
               <span class="text-lg">🧶</span>
             </div>
@@ -33,15 +33,14 @@
             </p>
 
             <div class="mt-8 flex items-center gap-4">
-              <a
-                href="https://bunaicorner.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-white font-semibold rounded-xl text-sm transition-all active:scale-95"
+              <button
+                disabled
+                class="inline-flex items-center gap-2 px-5 py-2.5 bg-stone-200 text-stone-400 font-semibold rounded-xl text-sm cursor-not-allowed select-none"
               >
                 <Icon icon="mdi:store-outline" class="w-4 h-4" />
                 Visit the Store
-              </a>
+              </button>
+              <span class="text-xs text-stone-400 italic">Launching soon - InshaAllah</span>
             </div>
           </div>
 

@@ -3,7 +3,7 @@ export const experiences = [
     role: 'Freelance Developer',
     company: 'Independent',
     type: 'Remote',
-    period: 'Oct 2024 - Present',
+    period: 'Oct 2025 - Present',
     highlights: [
       'Delivered agentic AI applications and end-to-end automation workflows for clients across different domains.',
       'Built a complete CRM and sales pipeline management system now actively used by a field sales team.',
