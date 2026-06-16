@@ -4,12 +4,21 @@
     :class="
       project.featured
         ? 'border-primary-300 bg-gradient-to-br from-primary-50 to-warm-50 shadow-lg shadow-primary-100/50 md:col-span-2'
-        : 'border-border bg-surface-card hover:border-primary-200 hover:shadow-md'
+        : project.fullWidth
+          ? 'border-accent-400/60 bg-gradient-to-br from-accent-100 to-surface-card shadow-md md:col-span-2'
+          : 'border-border bg-surface-card hover:border-primary-200 hover:shadow-md'
     "
   >
-    <div v-if="project.featured" class="absolute top-4 right-4">
-      <span class="px-3 py-1 text-xs font-semibold bg-primary-500 text-white rounded-full">
+    <div class="absolute top-4 right-4 flex flex-col items-end gap-2">
+      <span v-if="project.featured" class="px-3 py-1 text-xs font-semibold bg-primary-500 text-white rounded-full">
         Featured
+      </span>
+      <span
+        v-if="project.badge"
+        class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold rounded-full border border-accent-500/40 bg-accent-200 text-accent-600 tracking-wide uppercase shadow-sm"
+      >
+        <Icon icon="mdi:lightning-bolt" class="w-3.5 h-3.5" />
+        {{ project.badge }}
       </span>
     </div>
 

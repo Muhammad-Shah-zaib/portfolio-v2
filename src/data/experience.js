@@ -10,6 +10,7 @@ export const experiences = [
       'Turned a 10-20 minute manual product listing process into a sub-3-minute automated workflow, cutting time by over 86%.',
       'Worked directly with non-technical clients to define scope, set expectations, and ship production-ready systems.',
     ],
+    tech: ['React', 'Next.js', '.NET Core', 'ElevenLabs', 'Claude', 'Gemini', 'OpenAI API', 'OpenRouter', 'Tailwind CSS', 'AWS EC2', 'DigitalOcean', 'Supabase', 'FastAPI'],
   },
   {
     role: 'Frontend Developer',
@@ -21,6 +22,7 @@ export const experiences = [
       'Collaborated with backend team to design and integrate APIs ensuring seamless data synchronization.',
       'Polished UI and completed the feature set to deliver a reliable system for end users.',
     ],
+    tech: ['React', 'MobX', 'Django', 'Postman', 'GitLab', 'Typescript', 'Javascript', 'Styled Components', "CSS"],
   },
   {
     role: 'Frontend Developer',
@@ -31,6 +33,7 @@ export const experiences = [
       'Built and updated structured web pages to expand the dataset for AI model training.',
       'Developed responsive layouts using Tailwind CSS and JavaScript optimized for AI processing.',
     ],
+    tech: ['React', 'Tailwind CSS', 'CSS', 'JavaScript', 'GitHub'],
   },
 ]
 

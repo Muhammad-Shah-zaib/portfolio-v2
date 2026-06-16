@@ -27,6 +27,7 @@ export const projects = [
     ],
     tech: ['Next.js', 'FastAPI', 'Supabase', 'ElevenLabs', 'Claude', 'Gemini'],
     featured: false,
+    badge: 'Freelance',
     links: [],
   },
   {
@@ -40,6 +41,22 @@ export const projects = [
     ],
     tech: ['Next.js', 'Supabase'],
     featured: false,
+    badge: 'Freelance',
+    links: [],
+  },
+  {
+    title: 'Office Management System — HR Module',
+    description:
+      'As a freelance developer, I was solely responsible for engineering a high-value, end-to-end automated workforce tracking solution within an enterprise HR module. I designed and coded a smart leave management system, integrated real-time calendar sync, and overhauled the module\'s authentication flow to resolve legacy bugs and reinforce security.',
+    highlights: [
+      'Threshold-based leave logic: if a department drops below critical capacity, the system auto-flags the final request as a "no-cover leave" to alert HR before approval.',
+      'Azure Calendar API integration to sync employee schedules and team availability across the organization in real-time.',
+      'Overhauled the core authentication flow — fixed legacy session bugs, secured user sessions, and enforced role-based access control.',
+    ],
+    tech: ['Blazor', '.NET Core', 'jQuery', 'Azure Calendar API'],
+    featured: false,
+    badge: 'Freelance',
+    fullWidth: true,
     links: [],
   },
 ]

@@ -24,6 +24,16 @@
           <span>{{ point }}</span>
         </li>
       </ul>
+
+      <div v-if="experience.tech && experience.tech.length" class="mt-4 flex flex-wrap gap-2">
+        <span
+          v-for="t in experience.tech"
+          :key="t"
+          class="px-2.5 py-0.5 text-xs font-medium bg-surface-raised text-text-secondary rounded-full border border-border"
+        >
+          {{ t }}
+        </span>
+      </div>
     </div>
   </div>
 </template>
