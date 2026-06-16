@@ -7,7 +7,6 @@ export const experiences = [
     highlights: [
       'Delivered agentic AI applications and end-to-end automation workflows for clients across different domains.',
       'Built a complete CRM and sales pipeline management system now actively used by a field sales team.',
-      'Turned a 10-20 minute manual product listing process into a sub-3-minute automated workflow, cutting time by over 86%.',
       'Worked directly with non-technical clients to define scope, set expectations, and ship production-ready systems.',
     ],
     tech: ['React', 'Next.js', '.NET Core', 'ElevenLabs', 'Claude', 'Gemini', 'OpenAI API', 'OpenRouter', 'Tailwind CSS', 'AWS EC2', 'DigitalOcean', 'Supabase', 'FastAPI'],
