@@ -54,7 +54,7 @@ export const skillCategories = [
       { name: 'Git' },
       { name: 'Linux' },
       { name: 'Docker' },
-      { name: 'System Design' },
+      { name: 'Digital Ocean' },
     ],
   },
 ]
