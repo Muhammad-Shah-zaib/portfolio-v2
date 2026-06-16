@@ -24,17 +24,31 @@
               <Icon icon="mdi:email-fast-outline" class="w-5 h-5" />
               Send an Email
             </a>
-            <a
-              v-for="social in socials"
-              :key="social.name"
-              :href="social.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-5 py-3 border border-border bg-surface-card text-text-secondary font-semibold rounded-xl hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50 active:scale-95 transition-all"
-            >
-              <Icon :icon="social.icon" class="w-5 h-5" />
-              {{ social.name }}
-            </a>
+            <template v-for="social in socials" :key="social.name">
+              <a
+                v-if="!social.disabled"
+                :href="social.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-5 py-3 border border-border bg-surface-card text-text-secondary font-semibold rounded-xl hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50 active:scale-95 transition-all"
+              >
+                <Icon :icon="social.icon" class="w-5 h-5" />
+                {{ social.name }}
+              </a>
+
+              <span
+                v-else
+                class="inline-flex items-center gap-2 px-5 py-3 border border-border bg-surface-card text-text-secondary font-semibold rounded-xl opacity-60 cursor-not-allowed"
+                aria-disabled="true"
+                title="Under development"
+              >
+                <Icon :icon="social.icon" class="w-5 h-5" />
+                {{ social.name }}
+                <span class="text-xs font-medium uppercase tracking-[0.18em] text-text-muted">
+                  Soon
+                </span>
+              </span>
+            </template>
           </div>
         </div>
       </div>
