@@ -22,8 +22,7 @@ export const socials = [
   },
   {
     name: 'bunai-corner',
-    url: 'https://bunaicorner.com',
+    url: 'https://www.bunaicorner.com/store',
     icon: 'mdi:store',
-    disabled: true,
   },
 ]

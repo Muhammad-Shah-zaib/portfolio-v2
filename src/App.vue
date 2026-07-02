@@ -4,8 +4,8 @@
   <main>
     <HeroSection />
     <MissionSection />
-    <ProjectsSection />
     <BunaiCornerSection />
+    <ProjectsSection />
     <ExperienceSection />
     <EducationSection />
     <SkillsSection />

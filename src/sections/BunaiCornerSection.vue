@@ -12,14 +12,14 @@
         <div class="relative p-8 md:p-14 grid md:grid-cols-[1fr_auto] gap-10 items-center">
           <div>
             <div class="flex items-center gap-2 mb-5">
-              <span class="px-3 py-1 text-xs font-bold uppercase tracking-widest bg-stone-200/80 text-stone-500 rounded-full">
-                Coming Soon
+              <span class="px-3 py-1 text-xs font-bold uppercase tracking-widest bg-amber-200/80 text-amber-700 rounded-full">
+                Live Now
               </span>
               <span class="text-lg">🧶</span>
             </div>
 
             <h2 class="text-3xl md:text-5xl font-extrabold text-stone-800 tracking-tight leading-tight">
-              bunai<span class="text-amber-500">-corner</span>
+              Bunai<span class="text-amber-500">-Corner</span>
             </h2>
 
             <p class="mt-2 text-stone-500 font-medium text-lg">
@@ -27,20 +27,48 @@
             </p>
 
             <p class="mt-5 text-stone-600 leading-relaxed max-w-xl">
-              My sister and I are building <strong class="text-stone-800">bunai-corner</strong>, a handcrafted crochet store where every piece
+              My sister and I are building <strong class="text-stone-800">Bunai-Corner</strong>, a handcrafted crochet store where every piece
               is made with care and intention. Artisanal, unique, and made by hand.
               It's not just a side project. It's a small business we're pouring our energy into.
             </p>
 
-            <div class="mt-8 flex items-center gap-4">
-              <button
-                disabled
-                class="inline-flex items-center gap-2 px-5 py-2.5 bg-stone-200 text-stone-400 font-semibold rounded-xl text-sm cursor-not-allowed select-none"
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="https://www.bunaicorner.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 text-white font-semibold rounded-xl hover:bg-amber-600 active:scale-95 transition-all shadow-lg shadow-amber-200/50"
               >
-                <Icon icon="mdi:store-outline" class="w-4 h-4" />
+                <Icon icon="mdi:store-outline" class="w-5 h-5" />
                 Visit the Store
-              </button>
-              <span class="text-xs text-stone-400 italic">Launching soon - InshaAllah</span>
+              </a>
+              <div class="flex gap-3 ml-2">
+                <a
+                  href="https://www.instagram.com/bunai.corner/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-2 bg-stone-100 text-stone-500 rounded-lg hover:text-[#E1306C] hover:bg-stone-200 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Icon icon="mdi:instagram" class="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@bunai.corner?_r=1&_t=ZS-97XV3VPoJID"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-2 bg-stone-100 text-stone-500 rounded-lg hover:text-stone-900 hover:bg-stone-200 transition-colors"
+                  aria-label="TikTok"
+                >
+                  <Icon icon="simple-icons:tiktok" class="w-5 h-5" />
+                </a>
+                <a
+                  href="mailto:support@bunaicorner.com"
+                  class="p-2 bg-stone-100 text-stone-500 rounded-lg hover:text-amber-600 hover:bg-stone-200 transition-colors"
+                  aria-label="Email"
+                >
+                  <Icon icon="mdi:email-outline" class="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
 

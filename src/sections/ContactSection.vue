@@ -26,7 +26,6 @@
             </a>
             <template v-for="social in socials" :key="social.name">
               <a
-                v-if="!social.disabled"
                 :href="social.url"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -35,19 +34,6 @@
                 <Icon :icon="social.icon" class="w-5 h-5" />
                 {{ social.name }}
               </a>
-
-              <span
-                v-else
-                class="inline-flex items-center gap-2 px-5 py-3 border border-border bg-surface-card text-text-secondary font-semibold rounded-xl opacity-60 cursor-not-allowed"
-                aria-disabled="true"
-                title="Under development"
-              >
-                <Icon :icon="social.icon" class="w-5 h-5" />
-                {{ social.name }}
-                <span class="text-xs font-medium uppercase tracking-[0.18em] text-text-muted">
-                  Soon
-                </span>
-              </span>
             </template>
           </div>
         </div>
