@@ -6,15 +6,31 @@
         ? 'border-primary-300 bg-gradient-to-br from-primary-50 to-warm-50 shadow-lg shadow-primary-100/50 md:col-span-2'
         : project.fullWidth
           ? 'border-accent-400/60 bg-gradient-to-br from-accent-100 to-surface-card shadow-md md:col-span-2'
-          : 'border-border bg-surface-card hover:border-primary-200 hover:shadow-md'
+          : project.isOpenSource
+            ? 'border-border bg-surface-card hover:border-gray-300 hover:shadow-md md:col-span-2'
+            : 'border-border bg-surface-card hover:border-primary-200 hover:shadow-md'
     "
   >
     <div class="absolute top-4 right-4 flex flex-col items-end gap-2">
-      <span v-if="project.featured" class="px-3 py-1 text-xs font-semibold bg-primary-500 text-white rounded-full">
+      <span v-if="project.isBeta" class="px-2 py-0.5 text-[10px] font-bold bg-gray-800 text-white rounded uppercase tracking-wider shadow-sm">
+        BETA
+      </span>
+      <span v-if="project.isOpenSource" class="px-3 py-1 text-xs font-semibold bg-gray-100 text-gray-700 border border-gray-200 rounded-full flex items-center gap-1.5 shadow-sm">
+        <Icon icon="mdi:open-source-initiative" class="w-3.5 h-3.5" />
+        Open Source
+      </span>
+      <span v-else-if="project.featured" class="px-3 py-1 text-xs font-semibold bg-primary-500 text-white rounded-full">
         Featured
       </span>
       <span
-        v-if="project.badge"
+        v-if="project.version"
+        class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold rounded-full border border-gray-300 bg-gray-50 text-gray-600 tracking-wide shadow-sm"
+      >
+        <Icon icon="mdi:tag-outline" class="w-3.5 h-3.5" />
+        {{ project.version }}
+      </span>
+      <span
+        v-if="project.badge && !project.isOpenSource"
         class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold rounded-full border border-accent-500/40 bg-accent-200 text-accent-600 tracking-wide uppercase shadow-sm"
       >
         <Icon icon="mdi:lightning-bolt" class="w-3.5 h-3.5" />
@@ -23,7 +39,7 @@
     </div>
 
     <div class="p-6 md:p-8">
-      <h3 class="text-xl font-bold text-text-primary group-hover:text-primary-600 transition-colors">
+      <h3 class="text-xl font-bold transition-colors" :class="project.isOpenSource ? 'text-gray-900 group-hover:text-gray-600' : 'text-text-primary group-hover:text-primary-600'">
         {{ project.title }}
       </h3>
 
@@ -37,8 +53,8 @@
           :key="i"
           class="flex items-start gap-2 text-sm text-text-secondary"
         >
-          <Icon icon="mdi:check-circle" class="w-4 h-4 text-primary-500 mt-0.5 shrink-0" />
-          <span>{{ highlight }}</span>
+          <span class="mt-[2px] shrink-0 opacity-50 text-base leading-none">•</span>
+          <span v-html="highlight"></span>
         </li>
       </ul>
 
@@ -46,7 +62,8 @@
         <span
           v-for="tech in project.tech"
           :key="tech"
-          class="px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 rounded-full"
+          class="px-3 py-1 text-xs font-medium rounded-full"
+          :class="project.isOpenSource ? 'bg-gray-100 text-gray-700 border border-gray-200' : 'bg-primary-100 text-primary-700'"
         >
           {{ tech }}
         </span>
@@ -63,7 +80,9 @@
           :class="
             link.label === 'GitHub'
               ? 'bg-gray-900 text-white border-gray-900 hover:bg-gray-700'
-              : 'bg-primary-50 text-primary-700 border-primary-200 hover:bg-primary-100'
+              : project.isOpenSource
+                ? 'bg-gray-50 text-gray-700 border-gray-200 hover:bg-gray-100'
+                : 'bg-primary-50 text-primary-700 border-primary-200 hover:bg-primary-100'
           "
         >
           <Icon :icon="link.icon" class="w-4 h-4" />

@@ -60,3 +60,27 @@ export const projects = [
     links: [],
   },
 ]
+
+export const openSourceProjects = [
+  {
+    title: 'WhisperShell',
+    description: 'An offline voice-to-text tool providing system-wide dictation for Linux Wayland. Voice data is processed locally.',
+    highlights: [
+      'Supports multiple local Whisper models (e.g., Base or Turbo) for balanced speed and higher accuracy.',
+      'Configurable hotkeys to toggle voice recording or open the configuration panel.',
+      'Provides multiple installation methods, including <code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded border border-gray-200 text-xs font-mono">Copr</code> repository support for Fedora and direct manual RPM installation.'
+    ],
+    tech: ['Wayland', 'Whisper', 'Linux', 'RPM', 'Fedora'],
+    featured: false,
+    isOpenSource: true,
+    isBeta: true,
+    version: 'v0.1.0',
+    links: [
+      { label: 'Website', icon: 'mdi:web', url: 'https://whispershell.tech/' },
+      { label: 'Docs', icon: 'mdi:file-document', url: 'https://whispershell.tech/docs' },
+      { label: 'GitHub', icon: 'mdi:github', url: 'https://github.com/muhammad-shah-ZAIB/whispershell' },
+      { label: 'Manual Install (RPM)', icon: 'mdi:download', url: 'https://github.com/Muhammad-Shah-zaib/WhisperShell/releases/download/v0.1.0/WhisperShell-0.1.0-1.x86_64.rpm' },
+      { label: 'Watch Walkthrough', icon: 'mdi:play-circle-outline', url: 'https://www.loom.com/share/69af3882aa1142fca7d3e80d5cbec46f' }
+    ],
+  },
+]
